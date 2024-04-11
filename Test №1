@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print ("Введите число 'a' :");
+        int a = scanner.nextInt();
+        System.out.print ("Введите число 'b' :");
+        int b = scanner.nextInt();
+        int sum = a+b;
+        int sub = a-b;
+        int mul = a*b;
+        int div = a/b;
+
+        if (a>b)
+        {System.out.println("a>b");}
+        else if (a<b) { System.out.println("a<b");}
+        else {System.out.println("a=b");}
+
+        System.out.println("a+b = " + sum);
+        System.out.println("a-b = " + sub);
+        System.out.println("a*b = " + mul);
+        System.out.println("a/b = " + div);
+
+
+        scanner.close();
+    }
+}
